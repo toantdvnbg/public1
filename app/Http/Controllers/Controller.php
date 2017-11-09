@@ -10,7 +10,12 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
 	public function getInput(){
+		return true;
+	}
+
+	public function getIP(){
 		return true;
 	}
 }
